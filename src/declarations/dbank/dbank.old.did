@@ -1,4 +1,5 @@
 service : {
-  topUp: (nat) -> () oneway;
-  withDraw: (nat) -> () oneway;
+  checkBalance: () -> (nat) query;
+  deposit: (nat) -> () oneway;
+  withdraw: (nat) -> () oneway;
 }
